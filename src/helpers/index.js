@@ -1,0 +1,1 @@
+export { default as bannerIcon } from '../../public/images/bg.jpg'

@@ -1,0 +1,28 @@
+.main {
+    .banner {
+        background: url('../../../public/images/bg.jpg') no-repeat center /cover;
+        position: relative;
+        height: 1024px;
+        &__box {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            &-title {
+                font-size: 50px;
+                padding: 20px;
+            }
+            &-text {
+                font-size: 20px;
+                padding: 20px;
+                &:hover {
+                    color: rgb(185, 184, 184);
+                }
+            }
+        }
+    } 
+}

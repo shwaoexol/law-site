@@ -1,0 +1,12 @@
+$PlayfairDisplay: ('Regular', 400),
+             ('Medium', 500),
+             ('Semi Bold', 600),
+             ('Bold', 700);
+
+@each $name, $weight in $PlayfairDisplay {
+    @font-face {
+        font-family: 'PlayfairDisplay';
+        src: url('../../public/fonts/PlayfairDisplay-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
