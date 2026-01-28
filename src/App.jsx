@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import NavBar from "./components/Navbar/Navbar"
+import NavBar from "./components/Navbar/NavBar"
 import Home from "./pages/Home"
 import Services from "./pages/Services"
 import About from "./pages/About"
