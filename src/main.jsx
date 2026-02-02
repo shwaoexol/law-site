@@ -3,12 +3,15 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import './scss/main.scss'
-import { ChakraProvider, defaultSystem } from '@chakra-ui/react'
+import './scss/tailwind.css'
+import { ChakraProvider, } from '@chakra-ui/react'
+import { system } from '@chakra-ui/react/preset'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <ChakraProvider value={defaultSystem}>
+      <ChakraProvider value={system} >
         <App />
       </ChakraProvider>
     </BrowserRouter>

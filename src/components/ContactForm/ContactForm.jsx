@@ -31,7 +31,6 @@ const ContactForm = () => {
             <div className="wrapper">
                 <div className="content">
                     <h2 className="content__title">Расскажите нам о вашем случае</h2>
-                    <p className="content__text">Таким образом реализация намеченных планов заданий играет важную роль в формировании дальнейших направлений развития. Таким образом начало повседневной работы по фформированию позиции влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
                     <form ref={form} onSubmit={sendEmail} className="form">
                         <div className="contact__row">
                             <input type="text" name="name" placeholder="Имя" required />

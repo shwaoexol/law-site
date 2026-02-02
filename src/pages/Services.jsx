@@ -1,60 +1,66 @@
-import { Box, Grid, Heading, Text } from '@chakra-ui/react'
+import { Box, Container, Flex, Grid, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 import ContactForm from '../components/ContactForm/ContactForm'
+import { Link, NavLink } from 'react-router-dom';
 
-const ServicesCard = ({ title, text }) => (
-  <Box py="14" borderBottom="1px solid" borderColor="brand.200">
-    <Heading size="lg" fontWeight="400" mb="4">
-      {title}
-    </Heading>
-
-    <Text color="brand.400" mb="6">
-      {text}
-    </Text>
-  </Box>
-)
+const services = [
+  { title: "Уголовные дела", text: "В соответствии со статьями Уголовного кодекса..." },
+  { title: "Уголовно - исполнительное право", text: "Каждый человек, даже приговоренный к лишению свободы..." },
+  { title: "Корпоративное право", text: "Когда между акционерами какой-либо организации..." },
+  { title: "Недвижимость", text: "Именно поэтому для совершения сделки..." },
+  { title: "Таможенные споры", text: "Как правило, таможенные споры возникают..." },
+  { title: "Административное право", text: "Если верить обратиться к хорошему адвокату..." },
+  { title: "Дорожно-транспортные происшествия", text: "Ущерб от случившихся ДТП бывает различным..." },
+  { title: "Жилищные споры", text: "В соответствии со статьей 40 Конституции..." },
+  { title: "Защита прав потребителей", text: "Каждый человек хотя бы один раз сталкивался..." },
+  { title: "Кредитные споры", text: "Что представляет собой кредит? Заем денег..." },
+  { title: "Наследственные дела", text: "Наследство зачастую является ценой..." },
+  { title: "Семейные споры", text: "Время от времени между родственниками..." }
+];
 
 const Services = () => {
   return (
     <>
-        <Box 
-            bg="brand.800"
-            color="white"
-            textAlign="center"
-            py={{ base: "20", md: "28" }}
-            bgImage="linear-gradient(rgba(31, 41, 51, .85), rgba(31, 41, 51, .85)), url(../../../public/images/lawyer.jpg)"
-            bgSize="cover"
-            bgPos="center"
-          >
-            <Heading size="2xl" mb="4" fontWeight="500">
-              Наша практика
+        <Box bg="#f6f6f6" py={16}>
+          <Container maxW="1140px">
+            <Heading mb={8} fontFamily="Playfair Display" fontWeight="500">
+              Услуги
             </Heading>
-            <Text maxWidth="600px" mx="auto" color="gray.300">
-              Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения дальнейших направлений развития.
-            </Text>
-          </Box>
 
-          <Box bg="white" px={{ base: 6, md: 20 }} py="16">
-            <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap="16">
-              <ServicesCard 
-                title="Недоверие к закону"
-                text="Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения дальнейших направлений развития."
-              />
-              <ServicesCard
-                title="Судебная тяжба"
-                text="Повседневная практика показывает, что рамки и место обучения кадров позволяет выполнять важные задания по разработке дальнейших направлений развития."
-              />
-              <ServicesCard
-                title="Судебная практика по недвижимости"
-                text="Повседневная практика показывает, что рамки и место обучения кадров позволяет выполнять важные задания по разработке дальнейших направлений развития."
-              />
-              <ServicesCard
-                title="Травма и здравоохранение"
-                text="Повседневная практика показывает, что рамки и место обучения кадров позволяет выполнять важные задания по разработке дальнейших направлений развития."
-              />
+            <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={6}>
+              {services.map((service, i) => (
+                <Flex 
+                  key={i}
+                  p={6}
+                  bg="white"
+                  border="1px solid #d6d6d6"
+                  borderRadius="md"
+                  justify="space-between"
+                  align="flex-start"
+                  transition="all .3s"
+                  _hover={{
+                    transform: "translateY(-4px)",
+                    boxShadow: "lg"
+                  }}
+                >
+                  <Box maxW="90%">
+                    <Heading size="sm" color="#243a5a" mb={2}>
+                      {service.title}
+                    </Heading>
+
+                    <Text fontSize="sm" color="gray.600" mb={2}>
+                      {service.text}
+                    </Text>
+
+                    <Link as={NavLink} to="/contacts" fontSize="sm" color="#243a5a" textDecoration="undrline">
+                      Получить
+                    </Link>
+                  </Box>
+                </Flex>
+              ))}
             </Grid>
-          </Box>
-          <ContactForm/>
+          </Container>
+        </Box>
     </>
   )
 }

@@ -1,5 +1,7 @@
 @import './font.scss';
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +9,11 @@
 }
 
 body {
-    font-family: 'PlayfairDisplay';
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1140px;
     width: 100%;
+    font-family: "Playfair Display"
 }
 
 a {

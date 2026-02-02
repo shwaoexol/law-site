@@ -4,9 +4,11 @@ $PlayfairDisplay: ('Regular', 400),
              ('Bold', 700);
 
 @each $name, $weight in $PlayfairDisplay {
-    @font-face {
-        font-family: 'PlayfairDisplay';
-        src: url('../../public/fonts/PlayfairDisplay-#{$name}.ttf');
-        font-weight: $weight;
-    }
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/fonts/PlayfairDisplay-#{$name}.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: normal;
+  }
 }
+

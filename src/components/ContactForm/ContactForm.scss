@@ -13,10 +13,6 @@
             font-size: 32px;
         }
        }
-       &__text {
-        max-width: 700px;
-        margin-bottom: 45px;
-       }
     }
     .form {
         background: #fff;
@@ -45,6 +41,9 @@
         .contact__row {
             display: flex;
             gap: 20px;
+            @media (max-width: 520px) {
+                flex-direction: column;
+            }
         }
     }
 }

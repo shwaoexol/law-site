@@ -5,6 +5,8 @@ import Services from "./pages/Services"
 import About from "./pages/About"
 import Contacts from "./pages/Contacts"
 import NotFound from "./pages/NotFound"
+import Review from "./pages/Review"
+import { Toaster } from "react-hot-toast"
 
 
 
@@ -17,10 +19,24 @@ function App() {
   return (
     <>
         <NavBar/>
+        <Toaster
+          position="top-right"
+          reverseOrder={false}
+          toastOptions={{
+            style: {
+              background: "#696969",
+              color: "#fff",
+              borderRadius: "10px"
+
+            }
+          }}
+        />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
+          <Route path="/review" element={<Review />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
