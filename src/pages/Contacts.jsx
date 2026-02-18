@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box, Grid, Heading, Icon, Text } from '@chakra-ui/react'
-import { FaPhoneAlt, FaEnvelope, FaTelegramPlane, FaMapMarkerAlt } from "react-icons/fa"
+import { Box, Grid, Heading, Icon, Text, Link } from '@chakra-ui/react'
+import { FaPhoneAlt, FaEnvelope, FaTelegramPlane, FaWhatsapp,  FaMapMarkerAlt } from "react-icons/fa"
 
 const ContactCard = ({ icon, title, text, link }) => (
   <Box
@@ -53,9 +53,41 @@ const Contacts = () => {
 
       <Box bg="gray.50" color="brand.900" py="20" px={{ base: 6, md: 20 }}>
         <Grid templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }} gap="8" textAlign="center">
-          <ContactCard  icon={FaPhoneAlt} title="Позвоните нам" text="+998 97 777 13 68" />
+          <ContactCard  icon={FaPhoneAlt} title="Позвоните нам" text={
+            <Link 
+              href="tel:+998977771368"
+              color="inherit"
+              textDecoration="none"
+              border="none"
+            >
+               +998 97 777 13 68
+            </Link>
+          } 
+          />
           <ContactCard  icon={FaTelegramPlane} title="Telegram" text="@internationallegaladvisor" link="https://t.me/internationallegaladvisor" />
-          <ContactCard icon={FaEnvelope} title="Напишите нам" text="s998931811368@gmail.com  tiger_s2020@mail.ru" />
+          <ContactCard icon={FaWhatsapp}  title="Whatsapp" text="+998 33 339 33 99" link="https://wa.me/998333393399" />
+          <ContactCard icon={FaEnvelope} title="Напишите нам" text={
+            <>
+              <Link 
+                href="mailto:s998931811368@gmail.com"
+                color="inherit"
+                textDecoration="none"
+                border="none"
+                >
+                s998931811368@gmail.com
+              </Link>
+              <br />
+              <Link 
+                href="mailto:tiger_s2020@mail.ru"
+                color="inherit"
+                textDecoration="none"
+                border="none"
+                >
+                tiger_s2020@mail.ru
+              </Link>
+            </>
+          } 
+          />
           <ContactCard icon={FaMapMarkerAlt} title="Адрес" text="г. Ташкент, ул. Яншиланиш 48" />
         </Grid>
       </Box>

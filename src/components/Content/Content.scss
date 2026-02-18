@@ -3,6 +3,7 @@
         background: url('../../../public/images/bg.jpg') no-repeat center /cover;
         position: relative;
         height: 100vh;
+        padding-top: 40px;
         &__box {
             position: relative;
             z-index: 1;
@@ -13,7 +14,7 @@
             align-items: center;
             color: white;
             &-title {
-                font-size: 50px;
+                font-size: 35px;
                 padding: 20px;
                 max-width: 800px;
                 width: 100%;
@@ -23,6 +24,10 @@
                 overflow-wrap: break-word;
                 @media (max-width: 800px) {
                     font-size: 30px;
+                }
+                @media (max-width: 550px) {
+                    font-size: 25px;
+                    margin-top: 15px;
                 }
                 
             }

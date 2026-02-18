@@ -14,8 +14,8 @@ const Footer = () => {
             display="flex"
             alignItems="center"
         >
-            <HStack maxW="1140px" mx="auto" px="6" gap="20">
-                <Heading size="xl">
+            <HStack maxW="1140px" mx="auto" px="6" gap="20" >
+                <Heading size="xl" fontFamily="Playfair Display">
                     Давайте работать <br /> вместе
                 </Heading>
                 <Button as={NavLink} to="/contacts" color="black" variant="surface" colorPalette="white">

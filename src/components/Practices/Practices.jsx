@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import './Practices.scss'
 
 const items = [
-  { icon: FaBalanceScale, title: "Гражданское законодательство" },
-  { icon: FaGavel, title: "Уголовное законодательство" },
-  { icon: FaLandmark, title: "Административное законодательство" },
-  { icon: FaChartLine, title: "Экономическое законодательство" }
+  { icon: FaBalanceScale, title: "Гражданское судопроизводства" },
+  { icon: FaGavel, title: "Уголовное судопроизводства" },
+  { icon: FaLandmark, title: "Административное судопроизводства" },
+  { icon: FaChartLine, title: "Экономическое судопроизводства" }
 ]
 
 const container = {

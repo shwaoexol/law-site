@@ -11,19 +11,22 @@ import { logoIcon } from '../../helpers';
 const NavBar = () => {
   return (
     <>
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="bg-white shadow-sm py-2" sticky="top">
             <Container>
-                <Navbar.Brand as={NavLink} to="/">
+                <Navbar.Brand as={NavLink} to="/" className="d-flex align-items-center">
                   <img src={logoIcon} alt="" />
-                  АБ International Legal Advisor
+                  <div className="brand-text">
+                    <div className="brand-top">АДВОКАТСКОЕ БЮРО</div>
+                    <div className="brand-bottom">INTERNATIONAL LEGAL ADVISOR</div>
+                  </div>
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                 <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="ms-auto">
+                  <Nav className="ms-auto flex-row flex-nowrap gap-3 text-nowrap align-items-center">
                     <Nav.Link as={NavLink} to="/">Главная</Nav.Link>
-                    <Nav.Link as={NavLink} to="/services">Услуги</Nav.Link>
+                    <Nav.Link as={NavLink} to="/services">Виды помощи</Nav.Link>
                     <Nav.Link as={NavLink} to="/about">О нас</Nav.Link>
                     <Nav.Link as={NavLink} to="/review">Оставить отзыв</Nav.Link>
                     <Nav.Link as={NavLink} to="/contacts">Контакты</Nav.Link>
