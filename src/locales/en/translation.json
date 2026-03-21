@@ -1,0 +1,59 @@
+{
+  "lawoffice": "Law Office",
+  "home": "Home",
+  "services": "Services",
+  "about": "About",
+  "feedback": "Leave a review",
+  "contacts": "Contacts",
+  "contact": "Contact",
+
+  "hero_title": "I defend your rights.",
+  "hero_subtitle": "Lawyer specializing in complex criminal, civil, and labor cases.",
+  "cta_consultation": "Get a personalized consultation.",
+  "cta_work": "Let’s work together.",
+
+  "about_title": "Meet:",
+  "about_text": "Law enforcement and legal procedures may seem complicated to an unprepared person. Do you feel that you have been treated unfairly but don’t know where to start?\n\nSince March 2021, the law firm INTERNATIONAL LEGAL ADVISOR has been providing comprehensive legal consultations to both individuals and legal entities, using an individualized approach and clear, accessible language that leaves no room for misunderstanding.\n\nUndoubtedly, legal proceedings can be exhausting and may cause even more stress for those affected. That is why the goal of any competent lawyer is to help a person feel at ease by explaining their rights and highlighting the nuances that may influence a successful outcome of the case.\n\nI never forget that clients are, first and foremost, people with their own emotions and values. No matter how complex the case may be, INTERNATIONAL LEGAL ADVISOR keeps every client informed and provides personal guidance whenever important decisions need to be made.\n\nCalmly and effectively — the only way. Call and schedule a consultation.",
+
+  "services_title": "My specialization",
+  "criminal_title": "Criminal cases",
+  "criminal_desc": "Defense of suspects and the accused, as well as representation of victims’ interests. Work at the investigation stage and in court.",
+  "civil_title": "Civil disputes",
+  "civil_desc": "Property, contractual, family, and inheritance cases. Comprehensive handling of disputes of any complexity.",
+  "labor_title": "Labor disputes",
+  "labor_desc": "Resolution of conflicts between employees and employers. Restoration of rights and protection against unlawful actions.",
+  "representation_title": "Court representation",
+  "representation_desc": "Representation of interests in courts of all instances. Preparation of procedural documents and legal strategy.",
+
+  "practice_civil": "Civil litigation",
+  "practice_criminal": "Criminal proceedings",
+  "practice_administrative": "Administrative proceedings",
+  "practice_economic": "Commercial (economic) litigation",
+
+  "form_title": "Tell us about your case",
+  "form_name": "Name",
+  "form_message": "Message",
+  "form_submit": "Send",
+
+  "reviews_title": "Your feedback on working with the lawyer",
+  "reviews_write": "Write a review",
+  "reviews_recommend": "Would you recommend us?",
+  "reviews_additional": "Would you like to add anything?",
+
+  "contact_title": "Contact us",
+  "contact_call": "Call us",
+  "contact_write": "Write to us",
+  "contact_address_label": "Address",
+  "contact_address": "Tashkent, 48 Yanshilanish Street.",
+
+  "footer_description": "Protection of interests, provision of legal assistance, business support, and litigation practice.",
+  "license": "License No. TS 000461 dated April 5, 2021.",
+  "success_message": "Message sent successfully",
+  "error_message": "Failed to send message",
+  "review_moderation": "*Reviews are published after moderation",
+  "yes": "Yes",
+  "no": "No",
+  "last_name": "Last name",
+  "phone": "Phone",
+  "email": "Email"
+}

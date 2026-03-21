@@ -1,99 +1,70 @@
 import { Box, Container, Flex, Grid, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const services = [
-  {
-    title: "Уголовные дела",
-    text: "Профессиональная защита по уголовным делам любой сложности. Представляем интересы доверителей на стадии проверки, предварительного следствия и в суде, выстраивая стратегию защиты для достижения максимально возможного результата."
-  },
-  {
-    title: "Уголовно - исполнительное право",
-    text: "Комплексная правовая помощь по вопросам исполнения наказаний: изменение условий содержания, условно-досрочное освобождение, замена наказания и защита прав осужденных. Добиваемся соблюдения всех гарантий, предусмотренных законом."
-  },
-  {
-    title: "Корпоративное право",
-    text: "Эффективная правовая защита бизнеса и собственников. Сопровождаем корпоративные споры, защищаем интересы участников и акционеров, минимизируем риски и обеспечиваем стабильность корпоративных отношений."
-  },
-  {
-    title: "Недвижимость",
-    text: "Надежное юридическое сопровождение сделок с недвижимостью: от проверки объектов до полного оформления документов. Помогаем избежать рисков, защитить инвестиции и оперативно решить имущественные споры."
-  },
-  {
-    title: "Административное право",
-    text: "Защищаем интересы граждан и бизнеса при взаимодействии с государственными органами. Оспариваем штрафы и постановления, сопровождаем административные дела и добиваемся законного и справедливого решения."
-  },
-  {
-    title: "Жилищные споры",
-    text: "Разрешаем сложные жилищные конфликты: споры о праве проживания, выселении, разделе жилых помещений и иных вопросах жилищного права. Находим юридически выверенные решения в интересах клиента."
-  },
-  {
-    title: "Защита прав потребителей",
-    text: "Помогаем восстановить нарушенные права потребителей: возврат денежных средств, взыскание компенсаций и неустоек, защита в суде и на переговорах с продавцами и исполнителями услуг."
-  },
-  {
-    title: "Кредитные споры",
-    text: "Юридическая защита заемщиков в спорах с банками и финансовыми организациями. Оспариваем незаконные начисления, снижаем долговую нагрузку и сопровождаем процессы взыскания задолженности."
-  },
-  {
-    title: "Наследственные дела",
-    text: "Деликатное сопровождение наследственных вопросов: оформление наследства, разрешение споров между наследниками, оспаривание завещаний и защита имущественных интересов семьи."
-  },
-  {
-    title: "Семейные споры",
-    text: "Правовая поддержка в сложных жизненных ситуациях: расторжение брака, раздел имущества, алименты и споры о детях. Действуем профессионально, сохраняя баланс между законом и интересами клиента."
-  },
-  {
-    title: "Трудовые споры",
-    text: "Защищаем интересы работников и работодателей при трудовых конфликтах: незаконное увольнение, невыплата заработной платы, восстановление на работе и взыскание компенсаций. Добиваемся справедливого результата в рамках закона."
-  }
-];
+  { title: "criminal_title", text: "criminal_desc" },
+  { title: "labor_title", text: "labor_desc" },
+  { title: "civil_title", text: "civil_desc" },
+  { title: "representation_title", text: "representation_desc" }
+]
 
 const Services = () => {
+  const { t } = useTranslation()
+
   return (
-    <>
-        <Box bg="#f6f6f6" py={16}>
-          <Container maxW="1140px">
-            <Heading mb={8} fontFamily="Playfair Display" fontWeight="500">
-              Услуги
-            </Heading>
+    <Box bg="#f6f6f6" py={16}>
+      <Container maxW="1140px">
+        
+        <Heading mb={8} fontFamily="Playfair Display" fontWeight="500">
+          {t('services')}
+        </Heading>
 
-            <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={6}>
-              {services.map((service, i) => (
-                <Flex 
-                  key={i}
-                  p={6}
-                  bg="white"
-                  border="1px solid #d6d6d6"
-                  borderRadius="md"
-                  justify="space-between"
-                  align="flex-start"
-                  fontFamily="Playfair Display"
-                  transition="all .3s"
-                  _hover={{
-                    transform: "translateY(-4px)",
-                    boxShadow: "lg"
-                  }}
+        <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={6}>
+          {services.map((service, i) => (
+            <Flex 
+              key={i}
+              p={6}
+              bg="white"
+              border="1px solid #d6d6d6"
+              borderRadius="md"
+              justify="space-between"
+              align="flex-start"
+              fontFamily="Playfair Display"
+              transition="all .3s"
+              _hover={{
+                transform: "translateY(-4px)",
+                boxShadow: "lg"
+              }}
+            >
+              <Box maxW="90%">
+                
+                <Heading size="xs" color="#243a5a" mb={2}>
+                  {t(service.title)}
+                </Heading>
+
+                <Text fontSize="xs" color="gray.600" mb={2}>
+                  {t(service.text)}
+                </Text>
+
+                <Link
+                  as={NavLink}
+                  to="/contacts"
+                  fontSize="sm"
+                  color="#243a5a"
+                  textDecoration="underline"
                 >
-                  <Box maxW="90%">
-                    <Heading size="xs" fontFamily="Playfair Display"  color="#243a5a" mb={2}>
-                      {service.title}
-                    </Heading>
+                  {t('cta_consultation')}
+                </Link>
 
-                    <Text fontSize="xs" color="gray.600" mb={2}>
-                      {service.text}
-                    </Text>
+              </Box>
+            </Flex>
+          ))}
+        </Grid>
 
-                    <Link as={NavLink} to="/contacts" fontSize="sm" color="#243a5a" textDecoration="undrline">
-                      Получить
-                    </Link>
-                  </Box>
-                </Flex>
-              ))}
-            </Grid>
-          </Container>
-        </Box>
-    </>
+      </Container>
+    </Box>
   )
 }
 

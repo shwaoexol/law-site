@@ -27,5 +27,33 @@ img {
 .nav-link {
     font-size: 18px;
     font-weight: 500;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+
     
+}
+
+.lang-switcher button {
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 6px;
+  color: #333;
+}
+
+.lang-switcher button:hover {
+  color: #007bff;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    padding-top: 15px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    font-size: 16px;
+  }
 }

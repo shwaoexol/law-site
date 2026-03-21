@@ -1,0 +1,59 @@
+{
+  "lawoffice": "Advokatlik byurosi",
+  "home": "Bosh sahifa",
+  "services": "Xizmatlar",
+  "about": "Biz haqimizda",
+  "feedback": "Fikr qoldirish",
+  "contacts": "Kontaktlar",
+  "contact": "Bog'lanish",
+
+  "hero_title": "Sizning huquqlaringizni himoya qilaman.",
+  "hero_subtitle": "Murakkab jinoyat, fuqarolik va mehnat ishlari bo‘yicha advokat.",
+  "cta_consultation": "Shaxsiy konsultatsiya olish.",
+  "cta_work": "Keling, birga ishlaymiz.",
+
+  "about_title": "Tanishing:",
+  "about_text": "Huquqni qo‘llash jarayoni tayyorgarliksiz inson uchun murakkab tuyulishi mumkin. Sizga nisbatan adolatsizlik bo‘lganini his qilyapsiz, lekin nimadan boshlashni bilmaysizmi?\n\n2021-yil mart oyidan boshlab INTERNATIONAL LEGAL ADVISOR advokatlik byurosi jismoniy va yuridik shaxslarga to‘liq huquqiy maslahatlar berib kelmoqda. Individual yondashuv va tushunarli til orqali har qanday tushunmovchiliklarning oldi olinadi.\n\nSud jarayoni charchatishi va ortiqcha stress keltirib chiqarishi mumkin. Shu sababli malakali advokatning vazifasi — mijozni tinchlantirish, uning huquqlarini tushuntirish va ish natijasiga ta’sir qiluvchi muhim jihatlarni ko‘rsatishdir.\n\nMen har doim eslayman: mijozlar — bu o‘z his-tuyg‘ulari va qadriyatlariga ega insonlardir. Ish qanchalik murakkab bo‘lmasin, INTERNATIONAL LEGAL ADVISOR har bir mijozni xabardor qilib boradi va muhim qarorlar qabul qilishda shaxsan maslahat beradi.\n\nXotirjam va samarali — aynan shunday. Qo‘ng‘iroq qiling va konsultatsiyaga yoziling.",
+
+  "services_title": "Mening yo‘nalishim",
+  "criminal_title": "Jinoyat ishlari",
+  "criminal_desc": "Gumon qilinuvchilar va ayblanuvchilarni himoya qilish, jabrlanuvchilar manfaatlarini himoya qilish. Tergov va sud bosqichida ishlash.",
+  "civil_title": "Fuqarolik nizolari",
+  "civil_desc": "Mulk, shartnoma, oilaviy va meros ishlari. Har qanday murakkablikdagi nizolarni kompleks yuritish.",
+  "labor_title": "Mehnat nizolari",
+  "labor_desc": "Xodim va ish beruvchi o‘rtasidagi nizolarni hal qilish. Huquqlarni tiklash va noqonuniy harakatlardan himoya.",
+  "representation_title": "Sudda vakillik",
+  "representation_desc": "Barcha instansiya sudlarida manfaatlarni himoya qilish. Protsessual hujjatlar va huquqiy pozitsiyani tayyorlash.",
+
+  "practice_civil": "Fuqarolik sud ishlari",
+  "practice_criminal": "Jinoyat sud ishlari",
+  "practice_administrative": "Ma'muriy sud ishlari",
+  "practice_economic": "Iqtisodiy sud ishlari",
+
+  "form_title": "Holatingiz haqida bizga yozing",
+  "form_name": "Ism",
+  "form_message": "Xabar",
+  "form_submit": "Yuborish",
+
+  "reviews_title": "Advokat bilan ishlash bo‘yicha fikringiz",
+  "reviews_write": "Fikr yozish",
+  "reviews_recommend": "Bizni tavsiya qilasizmi?",
+  "reviews_additional": "Yana qo‘shimcha qilmoqchimisiz?",
+
+  "contact_title": "Biz bilan bog‘laning",
+  "contact_call": "Qo‘ng‘iroq qiling",
+  "contact_write": "Yozing",
+  "contact_address_label": "Manzil",
+  "contact_address": "Toshkent shahri, Yanshilanish ko‘chasi 48",
+
+  "footer_description": "Manfaatlarni himoya qilish, huquqiy yordam ko‘rsatish, biznesni qo‘llab-quvvatlash va sud amaliyoti.",
+  "license": "Litsenziya № TS 000461, 05.04.2021",
+  "success_message": "Xabar muvaffaqiyatli yuborildi",
+  "error_message": "Xabar yuborishda xatolik bor",
+  "review_moderation": "*Sharhlar moderator tekshiruvdan so‘ng joylashtiriladi",
+  "yes": "Ha",
+  "no": "Yo'q",
+  "last_name": "Familiya",
+  "phone": "Telefon",
+  "email": "Email"
+}

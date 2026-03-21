@@ -2,12 +2,13 @@ import React from 'react'
 import { FaBalanceScale, FaGavel, FaLandmark, FaChartLine } from "react-icons/fa";
 import { motion } from "framer-motion";
 import './Practices.scss'
+import { useTranslation } from 'react-i18next';
 
 const items = [
-  { icon: FaBalanceScale, title: "Гражданское судопроизводства" },
-  { icon: FaGavel, title: "Уголовное судопроизводства" },
-  { icon: FaLandmark, title: "Административное судопроизводства" },
-  { icon: FaChartLine, title: "Экономическое судопроизводства" }
+  { icon: FaBalanceScale, key: "practice_civil" },
+  { icon: FaGavel, key: "practice_criminal" },
+  { icon: FaLandmark, key: "practice_administrative" },
+  { icon: FaChartLine, key: "practice_economic" }
 ]
 
 const container = {
@@ -21,6 +22,8 @@ const cardAnim = {
 }
 
 const Practices = () => {
+  const { t } = useTranslation()
+
   return (
     <section className="practices">
       <div className="practices__container">
@@ -32,10 +35,12 @@ const Practices = () => {
           viewport={{ once: true }}
           className="practices__title"
         >
-          Моя специализация
+          {t('services_title')}
         </motion.h2>
         
-        <p className="practices__text">Представляя ваши интересы</p>
+        <p className="practices__text">
+          {t('representation_title')}
+        </p>
 
         <motion.div 
           variants={container}
@@ -60,7 +65,9 @@ const Practices = () => {
                   <Icon className="practices__icon" />
                 </motion.div>
 
-                <p className="practices__texts">{el.title}</p>
+                <p className="practices__texts">
+                  {t(el.key)}
+                </p>
               </motion.div>
             )
           })}

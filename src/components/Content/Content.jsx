@@ -2,21 +2,31 @@ import React from 'react'
 import { Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Content.scss'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Practices from '../Practices/Practices'
 import Footer from '../Footer/Footer'
+import { useTranslation } from 'react-i18next'
 
 const Content = () => {
+
+  const { t } = useTranslation()
   return (
     <>
         <main className="main">
             <section className="banner">
                     <div className="banner__box">
-                        <h2 className="banner__box-title">АДВОКАТСКОЕ БЮРО INTERNATIONAL LEGAL ADVISOR</h2>
-                        <span>На страже ваших прав</span>
+                        <h2 className="banner__box-title">
+                          {t('lawoffice')} INTERNATIONAL LEGAL ADVISOR
+                          </h2>
+                        <span>
+                          {t('hero_subtitle')}
+                        </span>
                         <p className="banner__box-text">
-                        Я верю в то, что «Все граждане Республики Узбекистан имеют одинаковые права и свободы и равны перед законом без различия пола, расы, национальности, языка, религии, социального происхождения, убеждений, личного и общественного положения.» (ст. 18 Конституции Республики Узбекистан). Я считаю, что если вы что-то делаете, то нужно это делать хорошо либо не делать вовсе, и поэтому с успехом представляю интересы своих клиентов с марта 2021 года. Независимо от характера и сложности ваших юридических проблем, от меня вы получите полноценную помощь и эффективное юридическое сопровождение. Защита прав клиентов — это то, что Адвокатское бюро "INTERNATIONAL LEGAL ADVISOR" умеет лучше всего.
+                          
                         </p>
+                        <button className="banner__box-btn">
+                          <Link to="/contacts">{t('cta_consultation')}</Link>
+                          </button>
                     </div>
             </section>
             <Practices/>

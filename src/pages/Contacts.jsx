@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Grid, Heading, Icon, Text, Link } from '@chakra-ui/react'
 import { FaPhoneAlt, FaEnvelope, FaTelegramPlane, FaWhatsapp,  FaMapMarkerAlt } from "react-icons/fa"
+import { useTranslation } from 'react-i18next'
 
 const ContactCard = ({ icon, title, text, link }) => (
   <Box
@@ -33,6 +34,8 @@ const ContactCard = ({ icon, title, text, link }) => (
 
 
 const Contacts = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <Box
@@ -44,51 +47,63 @@ const Contacts = () => {
         color="white"
       >
         <Heading size="2xl" mb="3" fontWeight="500" fontFamily="Playfair Display">
-          Связаться с нами
+          {t('contact_title')}
         </Heading>
+
         <Text maxW="600px" mx="auto" color="gray.300">
-          Защита интересов, обеспечение правовой помощи, сопровождение бизнеса и судебная практика.
+          {t('footer_description')}
         </Text>
       </Box>
 
       <Box bg="gray.50" color="brand.900" py="20" px={{ base: 6, md: 20 }}>
-        <Grid templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }} gap="8" textAlign="center">
-          <ContactCard  icon={FaPhoneAlt} title="Позвоните нам" text={
-            <Link 
-              href="tel:+998977771368"
-              color="inherit"
-              textDecoration="none"
-              border="none"
-            >
-               +998 97 777 13 68
-            </Link>
-          } 
-          />
-          <ContactCard  icon={FaTelegramPlane} title="Telegram" text="@internationallegaladvisor" link="https://t.me/internationallegaladvisor" />
-          <ContactCard icon={FaWhatsapp}  title="Whatsapp" text="+998 33 339 33 99" link="https://wa.me/998333393399" />
-          <ContactCard icon={FaEnvelope} title="Напишите нам" text={
-            <>
-              <Link 
-                href="mailto:s998931811368@gmail.com"
-                color="inherit"
-                textDecoration="none"
-                border="none"
-                >
-                s998931811368@gmail.com
+        <Grid templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }} gap="8">
+
+          <ContactCard
+            icon={FaPhoneAlt}
+            title={t('contact_call')}
+            text={
+              <Link href="tel:+998977771368" color="inherit">
+                +998 97 777 13 68
               </Link>
-              <br />
-              <Link 
-                href="mailto:tiger_s2020@mail.ru"
-                color="inherit"
-                textDecoration="none"
-                border="none"
-                >
-                tiger_s2020@mail.ru
-              </Link>
-            </>
-          } 
+            }
           />
-          <ContactCard icon={FaMapMarkerAlt} title="Адрес" text="г. Ташкент, ул. Яншиланиш 48" />
+
+          <ContactCard
+            icon={FaTelegramPlane}
+            title="Telegram"
+            text="@internationallegaladvisor"
+            link="https://t.me/internationallegaladvisor"
+          />
+
+          <ContactCard
+            icon={FaWhatsapp}
+            title="Whatsapp"
+            text="+998 33 339 33 99"
+            link="https://wa.me/998333393399"
+          />
+
+          <ContactCard
+            icon={FaEnvelope}
+            title={t('contact_write')}
+            text={
+              <>
+                <Link href="mailto:s998931811368@gmail.com" color="inherit">
+                  s998931811368@gmail.com
+                </Link>
+                <br />
+                <Link href="mailto:tiger_s2020@mail.ru" color="inherit">
+                  tiger_s2020@mail.ru
+                </Link>
+              </>
+            }
+          />
+
+          <ContactCard
+            icon={FaMapMarkerAlt}
+            title={t('contact_address_label')}
+            text={t('contact_address')}
+          />
+
         </Grid>
       </Box>
 
