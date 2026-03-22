@@ -7,6 +7,7 @@ import Contacts from "./pages/Contacts"
 import NotFound from "./pages/NotFound"
 import Review from "./pages/Review"
 import { Toaster } from "react-hot-toast"
+import Payment from "./pages/Payment"
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/review" element={<Review />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
     </>

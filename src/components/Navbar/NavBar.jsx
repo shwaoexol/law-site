@@ -44,6 +44,7 @@ const NavBar = () => {
               <Nav.Link as={NavLink} to="/about">{t('about')}</Nav.Link>
               <Nav.Link as={NavLink} to="/review">{t('feedback')}</Nav.Link>
               <Nav.Link as={NavLink} to="/contacts">{t('contacts')}</Nav.Link>
+              <Nav.Link as={NavLink} to="/payment">{t('payment')}</Nav.Link>
 
               {/* 🌍 Production Language Switcher */}
               <NavDropdown

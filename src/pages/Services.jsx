@@ -5,9 +5,9 @@ import { useTranslation } from 'react-i18next'
 
 const services = [
   { title: "criminal_title", text: "criminal_desc" },
-  { title: "labor_title", text: "labor_desc" },
   { title: "civil_title", text: "civil_desc" },
-  { title: "representation_title", text: "representation_desc" }
+  { title: "administrative_title", text: "administrative_desc" },
+  { title: "economic_title", text: "economic_desc" }
 ]
 
 const Services = () => {

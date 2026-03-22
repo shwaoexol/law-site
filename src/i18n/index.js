@@ -27,6 +27,6 @@ i18n
     },
     detection: {
         order: ['localStorage', 'navigate', 'htmlTag'],
-        cashes: ['localStorage']
+        caсhes: ['localStorage']
     }
 })
