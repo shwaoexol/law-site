@@ -7,27 +7,32 @@
   "contacts": "Contacts",
   "contact": "Contact",
 
-  "hero_title": "I defend your rights.",
+  "hero_title": "Defend your rights.",
   "hero_subtitle": "Lawyer specializing in criminal, civil, administrative, and commercial (economic) cases.",
   "cta_consultation": "Get a personalized consultation.",
   "cta_work": "I offer professional legal cooperation.",
 
-  "about_title": "Meet:",
-  "about_text": "Legal protection can be complex without professional support. If you have faced unfair treatment and do not know where to begin, timely action is essential.\n\nSince March 2021, INTERNATIONAL LEGAL ADVISOR has been providing qualified legal services to individuals and businesses. An individual approach and clear communication ensure effective solutions for cases of any complexity.\n\nLegal proceedings require not only expertise but also strategy. I explain your rights, guide you through every stage, and help you make informed decisions.\n\nBalanced and effective — the foundation of my work. Contact me for a consultation.",
+  "about_text": "Sherov Sunnat Kholdarovich is a lawyer specializing in complex legal matters that require not a formal approach, but a strong legal position, strategic thinking, and full control over the process.\n\nHis practice covers criminal, civil, commercial (economic), and administrative cases. He represents clients at all stages — from the initial dispute to proceedings before the Supreme Court.\n\nHe is officially licensed and provides legal services across the Republic of Uzbekistan in a wide range of legal matters.",
 
   "services_title": "My specialization",
-  "criminal_title": "Criminal cases",
-  "criminal_desc": "Defense of suspects and the accused, as well as representation of victims’ interests. Legal assistance at the pre-investigation, investigation, and trial stages.",
+  "criminal_title": "Criminal Defense",
+  "criminal_desc": "Representation in complex and high-profile criminal cases at all stages",
 
-  "civil_title": "Civil cases",
-  "civil_desc": "Resolution of property, contractual, family, and inheritance disputes. Comprehensive handling of cases of any complexity.",
+  "corporate_conflicts_title": "Labor & Corporate Disputes",
+  "corporate_conflicts_desc": "Resolving conflicts between employees, management, and shareholders",
 
-  "administrative_title": "Administrative cases",
-  "administrative_desc": "Challenging decisions and actions of public authorities, protection of rights and interests in administrative disputes.",
+  "appeal_title": "Appeals & Case Review",
+  "appeal_desc": "Challenging court decisions through appeal, cassation, and review",
 
-  "economic_title": "Commercial (economic) cases",
-  "economic_desc": "Legal support for business activities, resolution of commercial and corporate disputes, representation of business interests in court.",
+  "business_title": "Commercial & Business Disputes",
+  "business_desc": "Handling economic conflicts and protecting business interests",
 
+  "abuse_rights_title": "Protection Against Abuse of Rights",
+  "abuse_rights_desc": "Preventing unfair practices and defending client interests",
+
+  "migration_title": "Migration & Cross-Border Matters",
+  "migration_desc": "Legal assistance in international and migration-related issues",
+  
   "practice_civil": "Civil litigation",
   "practice_criminal": "Criminal proceedings",
   "practice_administrative": "Administrative proceedings",

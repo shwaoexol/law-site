@@ -29,8 +29,6 @@ const Content = () => {
                           </button>
                     </div>
             </section>
-            <Practices/>
-            <Footer/>
         </main>
     </>
   )

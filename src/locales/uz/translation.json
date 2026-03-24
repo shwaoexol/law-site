@@ -13,20 +13,26 @@
   "cta_work": "Huquqiy hamkorlikka taklif qilaman.",
 
   "about_title": "Tanishing:",
-  "about_text": "Huquqiy himoya professional yordamsiz murakkab bo'lishi mumkin. Agar siz adolatsizlikka duch kelgan bo'lsangiz va nimadan boshlashni bilmasangiz, vaqtni boy bermaslik muhim.\n\n2021-yil mart oyidan boshlab INTERNATIONAL LEGAL ADVISOR jismoniy va yuridik shaxslarga malakali yuridik yordam ko'rsatib kelmoqda. Individual yondashuv va tushunarli muloqot har qanday murakkab ishlarni samarali hal qilish imkonini beradi.\n\nSud jarayonlari bilim bilan birga strategiyani ham talab qiladi. Men sizning huquqlaringizni tushuntiraman, barcha bosqichlarda hamroh bo'laman va to'g'ri qaror qabul qilishga yordam beraman.\n\nXotirjam va samarali — ish faoliyatimning asosidir. Konsultatsiya uchun murojaat qiling.",
+  "about_text": "Sherov Sunnat Xoldarovich murakkab huquqiy vaziyatlarga ixtisoslashgan advokat bo'lib, bunda oddiy yondashuv emas, balki qat'iy huquqiy pozitsiya, strategik fikrlash va jarayon ustidan to'liq nazorat talab etiladi.\n\nAmaliyoti jinoyat, fuqarolik, iqtisodiy va ma’muriy ishlarni qamrab oladi. Mijozlar manfaatlarini nizoning boshlanishidan tortib Oliy sud bosqichigacha himoya qiladi.\n\nO'zbekiston Respublikasi hududida advokatlik faoliyatini amalga oshiradi va turli huquqiy masalalar bo'yicha yuridik yordam ko'rsatadi.",
 
   "services_title": "Mening yo'nalishim",
-  "criminal_title": "Jinoyat ishlari",
-  "criminal_desc": "Gumon qilinuvchilar va ayblanuvchilarni himoya qilish, jabrlanuvchilar manfaatlarini himoya qilish. Tekshiruv, tergov va sud bosqichlarida yuridik yordam.",
+  "criminal_title": "Jinoiy ishlar bo'yicha himoya",
+  "criminal_desc": "Murakkab va rezonansli jinoiy ishlarni barcha bosqichlarda yuritish",
 
-  "civil_title": "Fuqarolik ishlari",
-  "civil_desc": "Mulk, shartnoma, oilaviy va meros nizolarini hal etish. Har qanday murakkablikdagi ishlarni kompleks yuritish.",
+  "corporate_conflicts_title": "Mehnat va korporativ nizolar",
+  "corporate_conflicts_desc": "Xodimlar, rahbariyat va aksiyadorlar o'rtasidagi nizolarni hal qilish",
 
-  "administrative_title": "Ma'muriy ishlar",
-  "administrative_desc": "Davlat organlari qarorlari va harakatlarini shikoyat qilish, ma'muriy nizolarda huquq va manfaatlarni himoya qilish.",
+  "appeal_title": "Sud qarorlarini bekor qilish",
+  "appeal_desc": "Apellyatsiya, kassatsiya va sud qarorlarini qayta ko'rib chiqish",
 
-  "economic_title": "Iqtisodiy ishlar",
-  "economic_desc": "Biznes faoliyatini huquqiy qo'lab-quvvatlash, xo'jalik va korporativ nizolarni hal qilish, sudda biznes manfaatlarini himoya qilish.", 
+  "business_title": "Iqtisodiy va biznes nizolari",
+  "business_desc": "Tijorat nizolarini yuritish va biznes manfaatlarini himoya qilish",
+
+  "abuse_rights_title": "Huquqni suiiste’mol qilishdan himoya",
+  "abuse_rights_desc": "Nohaq harakatlarga qarshi kurash va mijoz manfaatlarini himoya qilish",
+
+  "migration_title": "Migratsiya va xalqaro masalalar",
+  "migration_desc": "Xalqaro va migratsiya masalalarida huquqiy yordam",
 
   "practice_civil": "Fuqarolik sud ishlari",
   "practice_criminal": "Jinoyat sud ishlari",
@@ -38,7 +44,7 @@
   "form_message": "Xabar",
   "form_submit": "Yuborish",
 
-  "reviews_title": "Advokat bilan ishlash bo'yicha fikringiz",
+  "reviews_title": "Advokat yordami bo'yicha fikringiz",
   "reviews_write": "Fikr yozish",
   "reviews_recommend": "Bizni tavsiya qilasizmi?",
   "reviews_additional": "Yana qo'shimcha qilmoqchimisiz?",

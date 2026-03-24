@@ -7,84 +7,136 @@ const About = () => {
 
   return (
     <>
+      {/* HERO */}
       <Box
         textAlign="center"
-        py={{ base: "20", md: "28" }}
-        bgImage="linear-gradient(rgba(31,41,51,.85), rgba(31,41,51,.85)), url('/images/handshake.jpg')"
+        py={{ base: "24", md: "32" }}
+        bgImage="linear-gradient(rgba(20,25,30,.85), rgba(20,25,30,.85)), url('/images/handshake.jpg')"
         bgSize="cover"
         bgPos="center"
       >
-
-        <Text maxW="700px" mx="auto" color="white" textTransform="uppercase" fontFamily="Playfair Display">
-          {t('lawoffice')} INTERNATIONAL LEGAL ADVISOR
+        <Text
+          color="gray.300"
+          letterSpacing="3px"
+          textTransform="uppercase"
+          fontSize="12px"
+          mb="4"
+        >
+          {t('lawoffice')}
         </Text>
+
+        <Heading
+          color="white"
+          fontFamily="Playfair Display"
+          fontWeight="500"
+          fontSize={{ base: "28px", md: "42px" }}
+          letterSpacing="1px"
+        >
+          INTERNATIONAL LEGAL ADVISOR
+        </Heading>
       </Box>
 
-      <Box bg="white" py="20" px={{ base: 6, md: 20 }}>
+      {/* ABOUT SECTION */}
+      <Box bg="white" py={{ base: 16, md: 24 }} px={{ base: 6, md: 20 }}>
         <Grid
-          templateColumns={{ base: "1fr", md: "1fr 0.9fr" }}
-          gap="16"
-          alignItems="center"
+          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+          gap={{ base: 10, md: 16 }}
+          alignItems="stretch"
         >
 
-          <Box 
-            pr={{ md: 8 }}
-            bgImage="linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/about.jpg')"
+          {/* LEFT */}
+          <Box
+            h="100%"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            p={{ base: 6, md: 12 }}
+            bg="linear-gradient(rgba(15,20,25,.75), rgba(15,20,25,.75)), url('/images/about.jpg')"
             bgSize="cover"
             bgPos="center"
             color="white"
-            borderRadius="lg"
-            boxShadow="2xl"
+            borderRadius="2xl"
+            boxShadow="0 20px 50px rgba(0,0,0,0.15)"
           >
-            <Heading size="lg" fontWeight="500" mb="4" p={3} textAlign="center" fontFamily="Playfair Display">
+            <Text
+              fontSize="12px"
+              letterSpacing="2px"
+              textTransform="uppercase"
+              color="gray.400"
+              mb="4"
+            >
+              About
+            </Text>
+
+            <Heading
+              fontSize={{ base: "22px", md: "30px" }}
+              fontWeight="500"
+              mb="6"
+              fontFamily="Playfair Display"
+              lineHeight="1.4"
+            >
               {t('hero_title')}
-              <Box w="40px" h="2px" bg="brand.700" mt="3" />
             </Heading>
 
-            <Text lineHeight="1.8" p={2} fontFamily="Playfair Display">
+            <Box w="50px" h="1px" bg="gray.400" mb="6" />
+
+            <Text
+              lineHeight="1.9"
+              fontSize={{ base: "14px", md: "15px" }}
+              color="gray.200"
+            >
               {t('about_text')}
             </Text>
           </Box>
 
-          <Box display="flex" justifyContent="center">
+          {/* RIGHT */}
+          <Box
+            h="100%"
+            overflow="hidden"
+            borderRadius="2xl"
+            boxShadow="0 20px 50px rgba(0,0,0,0.12)"
+          >
             <Image
               src="/images/about2.jpg"
               alt="about"
-              borderRadius="lg"
-              boxShadow="2xl"
               w="100%"
-              h={{ base: "300px", md: "700px", lg: "800px"}}
+              h="100%"
               objectFit="cover"
+              transition="transform .6s ease"
+              _hover={{
+                transform: "scale(1.05)"
+              }}
             />
           </Box>
+
         </Grid>
       </Box>
 
+      {/* LICENSE */}
       <Box
-        bg="#F2F1EF"
-        bgGradient="linear(to-b, #F5F4F2, #EFEDEB)"
-        border="1px solid"
-        borderColor="gray.200"
-        borderRadius="2px"
-        py={8}
+        bg="#F7F6F4"
+        borderTop="1px solid #e5e5e5"
+        borderBottom="1px solid #e5e5e5"
+        py={12}
         px={6}
         textAlign="center"
-        width="100%"
       >
         <VStack spacing={4}>
           <Text
-            fontSize={{ base: "28px", md: "36px" }}
-            fontWeight="600"
+            fontSize={{ base: "22px", md: "32px" }}
+            fontWeight="500"
             fontFamily="Playfair Display"
-            color="#1A1A1A"
-            lineHeight="1.2"
+            color="#1a1a1a"
+            letterSpacing="1px"
           >
             {t('license')}
           </Text>
+
+          <Box w="40px" h="1px" bg="#999" />
         </VStack>
       </Box>
 
-      <ContactForm/>
+      <ContactForm />
     </>
   )
 }
