@@ -1,5 +1,4 @@
 import { Box, Grid, Heading, VStack, Image, Text } from '@chakra-ui/react'
-import ContactForm from '../components/ContactForm/ContactForm'
 import { useTranslation } from 'react-i18next'
 
 const About = () => {
@@ -7,24 +6,7 @@ const About = () => {
 
   return (
     <>
-      {/* HERO */}
-      <Box
-        textAlign="center"
-        py={{ base: "24", md: "32" }}
-        bgImage="linear-gradient(rgba(20,25,30,.85), rgba(20,25,30,.85)), url('/images/handshake.jpg')"
-        bgSize="cover"
-        bgPos="center"
-      >
-        <Text
-          color="gray.300"
-          letterSpacing="3px"
-          textTransform="uppercase"
-          fontSize="12px"
-          mb="4"
-        >
-          {t('lawoffice')}
-        </Text>
-
+      <Box>
         <Heading
           color="white"
           fontFamily="Playfair Display"
@@ -65,7 +47,7 @@ const About = () => {
               color="gray.400"
               mb="4"
             >
-              About
+              {t('about')}
             </Text>
 
             <Heading
@@ -112,31 +94,49 @@ const About = () => {
         </Grid>
       </Box>
 
-      {/* LICENSE */}
-      <Box
-        bg="#F7F6F4"
-        borderTop="1px solid #e5e5e5"
-        borderBottom="1px solid #e5e5e5"
-        py={12}
-        px={6}
-        textAlign="center"
-      >
-        <VStack spacing={4}>
-          <Text
-            fontSize={{ base: "22px", md: "32px" }}
-            fontWeight="500"
-            fontFamily="Playfair Display"
-            color="#1a1a1a"
-            letterSpacing="1px"
-          >
-            {t('license')}
-          </Text>
+   
+      <Box bg="white" py={{ base: 16, md: 24 }} px={{ base: 6, md: 20 }}>
+        <Grid
+          templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
+          gap={8}
+        >
+        <Image
+          src="/images/guvohnoma.jpg"
+          alt="lawyer"
+          w="100%"
+          h="300px"
+          objectFit="contain"
+          borderRadius="xl"
+          boxShadow="0 10px 30px rgba(0,0,0,0.1)"
+          transition="0.4s"
+          _hover={{ transform: "scale(1.05)" }}
+        />
 
-          <Box w="40px" h="1px" bg="#999" />
-        </VStack>
+        <Image
+          src="/images/license.jpg"
+          alt="office"
+          w="100%"
+          h="300px"
+          objectFit="contain"
+          borderRadius="xl"
+          boxShadow="0 10px 30px rgba(0,0,0,0.1)"
+          transition="0.4s"
+          _hover={{ transform: "scale(1.05)" }}
+        />
+
+        <Image
+          src="/images/licanse2.jpg"
+          alt="meeting"
+          w="100%"
+          h="300px"
+          objectFit="contain"
+          borderRadius="xl"
+          boxShadow="0 10px 30px rgba(0,0,0,0.1)"
+          transition="0.4s"
+          _hover={{ transform: "scale(1.05)" }}
+        />
+        </Grid>
       </Box>
-
-      <ContactForm />
     </>
   )
 }

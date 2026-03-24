@@ -6,6 +6,7 @@ import { Link, NavLink } from 'react-router-dom'
 import Practices from '../Practices/Practices'
 import Footer from '../Footer/Footer'
 import { useTranslation } from 'react-i18next'
+import About from '../About/About'
 
 const Content = () => {
 
@@ -13,22 +14,23 @@ const Content = () => {
   return (
     <>
         <main className="main">
-            <section className="banner">
-                    <div className="banner__box">
-                        <h2 className="banner__box-title">
-                          {t('lawoffice')} INTERNATIONAL LEGAL ADVISOR
-                          </h2>
-                        <span>
-                          {t('hero_subtitle')}
-                        </span>
-                        <p className="banner__box-text">
-                          
-                        </p>
-                        <button className="banner__box-btn">
-                          <Link to="/contacts">{t('cta_consultation')}</Link>
-                          </button>
-                    </div>
-            </section>
+              <section className="banner">
+                      <div className="banner__box">
+                          <h2 className="banner__box-title">
+                            {t('lawoffice')} INTERNATIONAL LEGAL ADVISOR
+                            </h2>
+                          <span>
+                            {t('hero_subtitle')}
+                          </span>
+                          <p className="banner__box-text">
+                            
+                          </p>
+                          <button className="banner__box-btn">
+                            <Link to="/contacts">{t('cta_consultation')}</Link>
+                            </button>
+                      </div>
+              </section>
+            <About/>
         </main>
     </>
   )

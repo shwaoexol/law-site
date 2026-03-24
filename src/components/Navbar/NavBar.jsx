@@ -41,7 +41,6 @@ const NavBar = () => {
 
               <Nav.Link as={NavLink} to="/">{t('home')}</Nav.Link>
               <Nav.Link as={NavLink} to="/services">{t('services')}</Nav.Link>
-              <Nav.Link as={NavLink} to="/about">{t('about')}</Nav.Link>
               <Nav.Link as={NavLink} to="/review">{t('feedback')}</Nav.Link>
               <Nav.Link as={NavLink} to="/contacts">{t('contacts')}</Nav.Link>
               <Nav.Link as={NavLink} to="/payment">{t('payment')}</Nav.Link>
