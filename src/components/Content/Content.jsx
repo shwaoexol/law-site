@@ -3,8 +3,6 @@ import { Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Content.scss'
 import { Link, NavLink } from 'react-router-dom'
-import Practices from '../Practices/Practices'
-import Footer from '../Footer/Footer'
 import { useTranslation } from 'react-i18next'
 import About from '../About/About'
 

@@ -1,20 +1,21 @@
+import { lazy, Suspense } from "react"
+import { useTranslation } from "react-i18next"
 import { Route, Routes } from "react-router-dom"
 import NavBar from "./components/Navbar/NavBar"
-import Home from "./pages/Home"
-import Services from "./pages/Services"
-import Contacts from "./pages/Contacts"
-import NotFound from "./pages/NotFound"
-import Review from "./pages/Review"
 import { Toaster } from "react-hot-toast"
-import Payment from "./pages/Payment"
 
 
-
-
-
+const Home = lazy(() => import("./pages/Home"))
+const Services = lazy(() => import("./pages/Services"))
+const Contacts = lazy(() => import("./pages/Contacts"))
+const NotFound = lazy(() => import("./pages/NotFound"))
+const Review = lazy(() => import("./pages/Review"))
+const Payment = lazy(() => import("./pages/Payment"))
+const Admin = lazy(() => import("./components/Admin/Admin"))
 
 function App() {
   
+  const { t } = useTranslation();
 
   return (
     <>
@@ -31,15 +32,17 @@ function App() {
             }
           }}
         />
-        
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/review" element={<Review />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/payment" element={<Payment />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Suspense fallback={<div>{t('loading')}...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/review" element={<Review />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/payment" element={<Payment />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="/admin" element={<Admin/>} />
+          </Routes>
+        </Suspense>
     </>
   )
 }

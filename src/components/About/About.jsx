@@ -33,7 +33,7 @@ const About = () => {
             flexDirection="column"
             justifyContent="center"
             p={{ base: 6, md: 12 }}
-            bg="linear-gradient(rgba(15,20,25,.75), rgba(15,20,25,.75)), url('/images/about.jpg')"
+            bg="linear-gradient(rgba(15,20,25,.75), rgba(15,20,25,.75)), url('/images/about.webp')"
             bgSize="cover"
             bgPos="center"
             color="white"
@@ -79,7 +79,7 @@ const About = () => {
             boxShadow="0 20px 50px rgba(0,0,0,0.12)"
           >
             <Image
-              src="/images/about2.jpg"
+              src="/images/about2.webp"
               alt="about"
               w="100%"
               h="100%"

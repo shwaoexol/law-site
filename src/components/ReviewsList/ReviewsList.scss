@@ -1,0 +1,40 @@
+.reviews {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+
+  &__card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__message {
+    margin-top: 10px;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  &__recommend {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+  }
+
+  &__empty {
+    text-align: center;
+    color: #999;
+  }
+
+  &__loading {
+    text-align: center;
+    padding: 20px;
+  }
+}

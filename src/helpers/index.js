@@ -1,4 +1,4 @@
-export { default as bannerIcon } from '../../public/images/bg.jpg'
+export { default as bannerIcon } from '../../public/images/bg.webp'
 export { default as logoIcon } from '../../public/images/logo_navbar.png'
 
 

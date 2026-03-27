@@ -6,6 +6,9 @@
   "feedback": "Fikr qoldirish",
   "contacts": "Kontaktlar",
   "contact": "Bog'lanish",
+  "loading": "Yuklanmoqda",
+  "review": "Hozircha sharhlar yo'q",
+  "recommend": "Tavsiya qiladi",
 
   "hero_title": "Sizning huquqlaringizni himoya qilaman.",
   "hero_subtitle": "Jinoyat, fuqarolik, ma'muriy va iqtisodiy ishlar bo'yicha advokat",
@@ -28,7 +31,7 @@
   "business_title": "Iqtisodiy va biznes nizolari",
   "business_desc": "Tijorat nizolarini yuritish va biznes manfaatlarini himoya qilish",
 
-  "abuse_rights_title": "Huquqni suiiste’mol qilishdan himoya",
+  "abuse_rights_title": "Huquqni suiste’mol qilishdan himoya",
   "abuse_rights_desc": "Nohaq harakatlarga qarshi kurash va mijoz manfaatlarini himoya qilish",
 
   "migration_title": "Migratsiya va xalqaro masalalar",

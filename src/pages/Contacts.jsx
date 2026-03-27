@@ -41,7 +41,7 @@ const Contacts = () => {
       <Box
         textAlign="center"
         py={{ base: "20", md: "28" }}
-        bgImage="linear-gradient(rgba(70, 88, 105, 0.88), rgba(48, 60, 73, 0.88)), url('/images/contact.jpg')"
+        bgImage="linear-gradient(rgba(70, 88, 105, 0.88), rgba(48, 60, 73, 0.88)), url('/images/contact.webp')"
         bgSize="cover"
         bgPos="center"
         color="white"
